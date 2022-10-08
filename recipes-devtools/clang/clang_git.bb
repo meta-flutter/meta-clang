@@ -164,6 +164,8 @@ EXTRA_OECMAKE_append_class-target = "\
                   -DPYTHON_EXECUTABLE='${PYTHON}' \
 "
 
+LLDB_class-native = ""
+
 DEPENDS = "binutils zlib libffi libxml2 libxml2-native ninja-native swig-native"
 DEPENDS_append_class-nativesdk = " clang-crosssdk-${SDK_ARCH} virtual/${TARGET_PREFIX}binutils-crosssdk nativesdk-python3"
 DEPENDS_append_class-target = " clang-cross-${TARGET_ARCH} python3"
